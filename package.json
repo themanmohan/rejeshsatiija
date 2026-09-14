@@ -1,0 +1,19 @@
+{
+  "name": "rejesh-satiija-site",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "dev:light": "NODE_OPTIONS='--max-old-space-size=512' next dev -p 3001",
+    "dev:backend": "npm run dev --prefix backend",
+    "build": "next build",
+    "start": "next start",
+    "start:backend": "npm run start --prefix backend"
+  },
+  "dependencies": {
+    "axios": "^1.18.1",
+    "next": "^14.2.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}

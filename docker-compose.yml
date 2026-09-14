@@ -1,0 +1,45 @@
+# Same folder = one Docker Compose stack
+# - site  → static Next.js (nginx) on port 8081
+# - api   → contact SMTP backend on internal :4000
+#
+# Contact endpoint (same-origin, no CORS) — OR:
+#   Info:  https://r1.allheartweb.info/api/contact
+#   .com:  https://rejeshsatiija.com/api/contact
+# Set NEXT_PUBLIC_CONTACT_API_URL="" so the form uses /api/contact on current host.
+
+services:
+  rapi:
+    build:
+      context: ./backend
+    image: rejesh-satiija-api:latest
+    env_file:
+      - ./backend/.env
+    environment:
+      PORT: "4000"
+      # Frontend origins allowed when calling API directly — OR / all of:
+      # https://r1.allheartweb.info OR https://rejeshsatiija.com (and www / local)
+      FRONTEND_ORIGIN: "http://localhost:3000,http://localhost:3001,http://localhost:8081,https://r1.allheartweb.info,https://rejeshsatiija.com,https://www.rejeshsatiija.com"
+    expose:
+      - "4000"
+    restart: unless-stopped
+
+  rsite:
+    build:
+      context: .
+      args:
+        NEXT_PUBLIC_CONTACT_API_URL: ""
+        NEXT_PUBLIC_SITE_URL: "https://rejeshsatiija.com"
+        NEXT_PUBLIC_CONTACT_EMAIL: "hello@rejeshsatiija.com"
+        NEXT_PUBLIC_API_BASE_URL: "https://backend-drive.enopsy.com"
+        NEXT_PUBLIC_OTP_API_URL: "https://backend-auth.enopsy.com"
+        NEXT_PUBLIC_WEBSITE_CENTER: "rejeshsatiija"
+        NEXT_PUBLIC_WEBSITE_NAME: "rejeshsatiija"
+        NEXT_PUBLIC_TENANT_ID: "6a4f383f9fd398d9447f634d"
+        NEXT_PUBLIC_TICKET_URL: "https://backend-dashboard.enopsy.com"
+        NEXT_PUBLIC_CONTACT_DEPARTMENT_BASE_URI: "https://backend-dashboard.enopsy.com"
+    image: rejesh-satiija-site:latest
+    ports:
+      - "8082:80"
+    depends_on:
+      - rapi
+    restart: unless-stopped

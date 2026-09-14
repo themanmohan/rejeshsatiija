@@ -1,0 +1,57 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+/.next/
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+.npm-cache
+_refs/
+
+# bootstrap bulk assets not used by the site (keep only referenced files in public/assets)
+public/assets/img/cinemas/
+public/assets/img/commercials/
+public/assets/img/hotels/
+public/assets/img/largeBanquet/
+public/assets/img/residential/
+public/assets/img/rooms/
+public/assets/img/schools/
+public/assets/img/smallBanquet/
+public/assets/img/favicon/
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files
+.env*
+!.env.example
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+.env
+node_modules
+.next
+backend/node_modules
+backend/.env
