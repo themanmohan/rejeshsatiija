@@ -64,7 +64,7 @@ export default function Home() {
         
         <div className="eyebrow">London-based Industrialist · Mining, Metals &amp; Global Investment</div>
         <h1>Building wealth with purpose, <em>creating legacy</em> with compassion.</h1>
-        <p className="lede">With over three decades building industrial and investment ventures across four continents, <strong>Rejesh Satiija</strong> — known to friends and business partners as "Mr. Lucky" — is the founder and chairman of the <strong>Sun &amp; Sand Group Holding Limited</strong>, an international business spanning AI healthcare and robotics diagnostics, agriculture, and SNT technology for road infrastructure across the GCC, Africa, Asia, Latin America and Europe.</p>
+        <p className="lede">Mr Rejesh Satiija is a powerful businessman, a lucky man, and a miracle man. He dreams big, takes bold steps, and makes the impossible possible. With over three decades building industrial and investment ventures across four continents, <strong>Rejesh Satiija</strong> — known to friends and business partners as "Mr. Lucky" — is the founder and chairman of the <strong>Sun &amp; Sand Group Holding Limited</strong>, an international business spanning AI healthcare and robotics diagnostics, agriculture, and SNT technology for road infrastructure across the GCC, Africa, Asia, Latin America and Europe.</p>
         <div className="hero-meta">
           {/*<div><strong>£1.3 Billion</strong>Net worth, March 2018</div> */}
           <div><strong>Est. 1993</strong>Left India for Lagos, Nigeria</div>

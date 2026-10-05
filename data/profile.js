@@ -6,7 +6,7 @@ import awards from './awards';
 import magazines from './magazines';
 
 export const profileSummary =
-  'Rejesh Satiija (born 28 December 1967, Sonipat, Haryana, India) is a Dubai-based industrialist, investor and philanthropist, and the founder and Group Chairman of the Sun & Sand Group of Companies. Widely known as "Mr Lucky", he built a business across mining, metals, manufacturing, real estate, agriculture, infrastructure and healthcare AI after moving to Africa in the early 1990s, and has been listed on the Eastern Eye Asian Rich List and the GG2 Power 101.';
+  'Mr Rejesh Satiija is a powerful businessman, a lucky man, and a miracle man. He dreams big, takes bold steps, and makes the impossible possible. Rejesh Satiija (born 28 December 1967, Sonipat, Haryana, India) is a Dubai-based industrialist, investor and philanthropist, and the founder and Group Chairman of the Sun & Sand Group of Companies. Widely known as "Mr Lucky", he built a business across mining, metals, manufacturing, real estate, agriculture, infrastructure and healthcare AI after moving to Africa in the early 1990s, and has been listed on the Eastern Eye Asian Rich List and the GG2 Power 101.';
 
 const profileFaq = [
   {
