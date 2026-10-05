@@ -6,43 +6,18 @@ import ScrollEffects from '../../components/ScrollEffects';
 import SeoHead from '../../components/SeoHead';
 import { boldNodes } from '../../lib/boldNames';
 import { PAGE_META } from '../../lib/seo';
-import { useGetAwardsByType } from '../../hooks/useGetAwardsByType';
+import { DOC_TYPES } from '../../lib/docsApi';
+import { getListingItems } from '../../lib/listing';
 
 const meta = PAGE_META.awards;
 
-export default function AwardsPage() {
-  const { items, loading, error } = useGetAwardsByType();
+// Rendered at build time so the links are in the HTML that search and AI
+// crawlers (which don't run JavaScript) read.
+export async function getStaticProps() {
+  return { props: { items: await getListingItems(DOC_TYPES.awards) } };
+}
 
-  if (loading) {
-    return (
-      <>
-        <SeoHead title={meta.title} description={meta.description} path={meta.path} />
-        <NavHub />
-        <section id="awards" className="section-no-hero">
-          <div className="wrap">
-            <p>Loading awards...</p>
-          </div>
-        </section>
-        <FooterHub showContactForm={false} />
-      </>
-    );
-  }
-
-  if (error) {
-    return (
-      <>
-        <SeoHead title={meta.title} description={meta.description} path={meta.path} />
-        <NavHub />
-        <section id="awards" className="section-no-hero">
-          <div className="wrap">
-            <p>{error}</p>
-          </div>
-        </section>
-        <FooterHub showContactForm={false} />
-      </>
-    );
-  }
-
+export default function AwardsPage({ items }) {
   return (
     <>
       <SeoHead title={meta.title} description={meta.description} path={meta.path} />

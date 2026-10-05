@@ -4,9 +4,9 @@ import blogs from '../../data/blogs';
 import { useGetBlogsByType } from '../../hooks/useGetBlogsByType';
 import {
   DOC_TYPES,
-  fetchDocsByType,
   fetchMappedDocBySlug,
 } from '../../lib/docsApi';
+import { getCmsOnlyDocs } from '../../lib/listing';
 import { buildDetailDescription, buildDetailTitle } from '../../lib/seo';
 
 export async function getStaticPaths() {
@@ -17,7 +17,8 @@ export async function getStaticPaths() {
   });
 
   try {
-    const docs = await fetchDocsByType(DOC_TYPES.blog, { limit: 100 });
+    // CMS copies of local articles are skipped so each article has one URL.
+    const docs = await getCmsOnlyDocs(DOC_TYPES.blog);
     docs.forEach((doc) => {
       if (doc?.slug) pathMap.set(doc.slug, { params: { slug: doc.slug } });
     });

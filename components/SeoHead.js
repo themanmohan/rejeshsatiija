@@ -12,6 +12,7 @@ export default function SeoHead({
   image,
   type = 'website',
   noIndex = false,
+  schema,
 }) {
   const rawTitle = String(title || '').trim();
   const pageTitle = rawTitle
@@ -24,7 +25,9 @@ export default function SeoHead({
   const pageUrl = path.startsWith('http')
     ? path
     : `${SITE_URL}${path === '/' ? '' : path}`;
-  const pageImage = image || DEFAULT_SEO.image;
+  const rawImage = image || DEFAULT_SEO.image;
+  // Open Graph / Twitter require absolute image URLs.
+  const pageImage = rawImage.startsWith('/') ? `${SITE_URL}${rawImage}` : rawImage;
 
   return (
     <Head>
@@ -49,6 +52,13 @@ export default function SeoHead({
       <meta name="twitter:title" content={pageTitle} />
       <meta name="twitter:description" content={pageDescription} />
       <meta name="twitter:image" content={pageImage} />
+
+      {schema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      )}
     </Head>
   );
 }

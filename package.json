@@ -8,7 +8,8 @@
     "dev:backend": "npm run dev --prefix backend",
     "build": "next build",
     "start": "next start",
-    "start:backend": "npm run start --prefix backend"
+    "start:backend": "npm run start --prefix backend",
+    "indexnow": "node scripts/indexnow.mjs"
   },
   "dependencies": {
     "axios": "^1.18.1",

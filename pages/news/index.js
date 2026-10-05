@@ -1,45 +1,17 @@
 import ListingHub from '../../components/ListingHub';
-import NavHub from '../../components/NavHub';
-import FooterHub from '../../components/FooterHub';
-import SeoHead from '../../components/SeoHead';
-import { useGetNewsByType } from '../../hooks/useGetNewsByType';
+import { DOC_TYPES } from '../../lib/docsApi';
+import { getListingItems } from '../../lib/listing';
 import { PAGE_META } from '../../lib/seo';
 
 const meta = PAGE_META.news;
 
-export default function NewsPage() {
-  const { items, loading, error } = useGetNewsByType();
+// Rendered at build time so the links are in the HTML that search and AI
+// crawlers (which don't run JavaScript) read.
+export async function getStaticProps() {
+  return { props: { items: await getListingItems(DOC_TYPES.news) } };
+}
 
-  if (loading) {
-    return (
-      <>
-        <SeoHead title={meta.title} description={meta.description} path={meta.path} />
-        <NavHub />
-        <section id="news">
-          <div className="wrap">
-            <p>Loading news...</p>
-          </div>
-        </section>
-        <FooterHub showContactForm={false} />
-      </>
-    );
-  }
-
-  if (error) {
-    return (
-      <>
-        <SeoHead title={meta.title} description={meta.description} path={meta.path} />
-        <NavHub />
-        <section id="news">
-          <div className="wrap">
-            <p>{error}</p>
-          </div>
-        </section>
-        <FooterHub showContactForm={false} />
-      </>
-    );
-  }
-
+export default function NewsPage({ items }) {
   return (
     <ListingHub
       pageTitle={meta.title}

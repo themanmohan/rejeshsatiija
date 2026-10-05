@@ -3,6 +3,7 @@ import Script from 'next/script';
 import { useEffect } from 'react';
 import { boldNodes } from '../lib/boldNames';
 import NavHub from './NavHub';
+import RelatedLinks from './RelatedLinks';
 import SeoHead from './SeoHead';
 
 export default function BlogPostLayout({
@@ -111,6 +112,8 @@ export default function BlogPostLayout({
               ))}
             </div>
           ) : null}
+
+          <RelatedLinks path={path} />
         </div>
 
         <div className="wrap post-nav">

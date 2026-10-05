@@ -1,6 +1,7 @@
 import PostLayout from '../../components/PostLayout';
+import { StatementAfter, StatementIntro } from '../../components/StatementDetails';
 import updates from '../../data/updates';
-import { buildDetailDescription, buildDetailTitle } from '../../lib/seo';
+import { buildDetailDescription, buildDetailTitle, getArticleSchema } from '../../lib/seo';
 
 export async function getStaticPaths() {
   return {
@@ -35,13 +36,17 @@ export default function UpdateDetail({ item, prev, next }) {
     );
   }
 
+  const path = `/updates/${item.slug}`;
+  const isStatement = Boolean(item.summary || item.faq);
+
   return (
     <PostLayout
       pageTitle={buildDetailTitle(item)}
       pageDescription={buildDetailDescription(item)}
-      path={`/updates/${item.slug}`}
-      backHref="/"
-      backLabel="Home"
+      pageSchema={getArticleSchema(item, path)}
+      path={path}
+      backHref="/updates"
+      backLabel="Official Statements"
       eyebrow={item.eyebrow}
       title={item.title}
       dek={item.dek}
@@ -50,13 +55,15 @@ export default function UpdateDetail({ item, prev, next }) {
       imgAlt={item.imgAlt}
       cap={item.cap}
       contentHtml={item.contentHtml}
+      beforeContent={isStatement ? <StatementIntro item={item} /> : null}
+      afterContent={isStatement ? <StatementAfter item={item} /> : null}
       tags={item.tags}
       sourceNote={item.sourceNote}
       prevHref={prev ? `/updates/${prev.slug}` : null}
       nextHref={next ? `/updates/${next.slug}` : null}
       nextLabel="Next"
-      listHref="/"
-      listLabel="Home"
+      listHref="/updates"
+      listLabel="All Statements"
       footerLabel="Official Updates"
     />
   );

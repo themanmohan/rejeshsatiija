@@ -1,45 +1,17 @@
 import ListingHub from '../../components/ListingHub';
-import NavHub from '../../components/NavHub';
-import FooterHub from '../../components/FooterHub';
-import SeoHead from '../../components/SeoHead';
-import { useGetBlogsByType } from '../../hooks/useGetBlogsByType';
+import { DOC_TYPES } from '../../lib/docsApi';
+import { getListingItems } from '../../lib/listing';
 import { PAGE_META } from '../../lib/seo';
 
 const meta = PAGE_META.blogs;
 
-export default function BlogsPage() {
-  const { items, loading, error } = useGetBlogsByType();
+// Rendered at build time so the links are in the HTML that search and AI
+// crawlers (which don't run JavaScript) read.
+export async function getStaticProps() {
+  return { props: { items: await getListingItems(DOC_TYPES.blog) } };
+}
 
-  if (loading) {
-    return (
-      <>
-        <SeoHead title={meta.title} description={meta.description} path={meta.path} />
-        <NavHub />
-        <section id="blogs">
-          <div className="wrap">
-            <p>Loading blogs...</p>
-          </div>
-        </section>
-        <FooterHub showContactForm={false} />
-      </>
-    );
-  }
-
-  if (error) {
-    return (
-      <>
-        <SeoHead title={meta.title} description={meta.description} path={meta.path} />
-        <NavHub />
-        <section id="blogs">
-          <div className="wrap">
-            <p>{error}</p>
-          </div>
-        </section>
-        <FooterHub showContactForm={false} />
-      </>
-    );
-  }
-
+export default function BlogsPage({ items }) {
   return (
     <ListingHub
       pageTitle={meta.title}

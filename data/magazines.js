@@ -1,6 +1,72 @@
 // Auto-generated content data for magazines
 const magazines = [
   {
+    "slug": "travel-bharat-ai-healthcare-robotics-2026",
+    "aliases": [
+      "featured-in-travel-bharat-indian-railways-premium-onboard-magazine"
+    ],
+    "tag": "Travel Bharat",
+    "outlet": "Travel Bharat (Vande Bharat Express on-board magazine)",
+    "title": "Advancing Preventive Healthcare through AI-Powered Robotics",
+    "metaTitle": "Travel Bharat (Vande Bharat Express): Rejesh Satiija — Advancing Preventive Healthcare through AI-Powered Robotics",
+    "metaDescription": "Rejesh Satiija featured in Travel Bharat, the on-board magazine of the Vande Bharat Express (Vol. 01, Issue 01), for his Medigo, Femingo and Kidigo AI healthcare robots.",
+    "excerpt": "Featured as an Indian Achiever in the inaugural issue of Travel Bharat, the on-board magazine of the Vande Bharat Express, for his AI-powered preventive healthcare robots.",
+    "date": "2026",
+    "datePublished": "2026-09-05",
+    "listImg": "/magazines/images/mag_travelbharat_2026_cover.jpg",
+    "listAlt": "Travel Bharat, Vande Bharat Express on-board magazine, Vol. 01 Issue 01",
+    "eyebrow": "Travel Bharat · Vande Bharat Express · Indian Achievers",
+    "dek": "Featured as an Indian Achiever in the inaugural issue of Travel Bharat, the on-board magazine of the Vande Bharat Express, for his AI-powered preventive healthcare robots.",
+    "meta": [
+      "Travel Bharat, Vol. 01 Issue 01",
+      "2026"
+    ],
+    "img": "/magazines/images/mag_travelbharat_2026_feature.jpg",
+    "imgAlt": "Travel Bharat special feature: Advancing Preventive Healthcare through AI-Powered Robotics — Rejesh Satiija",
+    "cap": "Travel Bharat, Vol. 01 Issue 01, p.14 — \"Indian Achievers\" special feature.",
+    "sourceUrl": "https://travelbharat.org/assets/Travel%20Bharat%20Rail%20Magazine%20-%2005-09-2026%20-%20Final%20Single%20Pages%20Low%20Res..pdf",
+    "sourceLabel": "Read the full issue (PDF) on Travel Bharat",
+    "contentHtml": "<p><strong>Rejesh Satiija</strong> is the subject of the \"Indian Achievers\" special feature in the inaugural issue of <em>Travel Bharat</em> (Vol. 01, Issue 01), the premium on-board magazine distributed on the Vande Bharat Express between New Delhi and Shri Mata Vaishno Devi Katra.</p>\n<p>Titled \"Advancing Preventive Healthcare through AI-Powered Robotics\", the two-page feature describes <strong>Satiija</strong>, an NRI entrepreneur from Haryana, as being at the forefront of using artificial intelligence and robotics for preventive health, and links his work to India's national ambitions for AI-driven growth.</p>\n<p>It profiles three healthcare robots he has introduced: <strong>Medigo</strong> for men, offering more than 72 health tests with results in about 10 minutes; <strong>Femingo</strong>, designed around women's health; and <strong>Kidigo</strong>, which provides quick health checks for children. The feature presents them as a way to make early detection faster and more accessible, easing pressure on healthcare facilities.</p>",
+    "tags": [
+      "Travel Bharat",
+      "Vande Bharat",
+      "Healthcare AI",
+      "2026"
+    ],
+    "sourceNote": "Source: Travel Bharat — Railways' Premium On-Board Magazine (Vande Bharat Express), Vol. 01 Issue 01, pp.14–15, published by SLM Media Solutions; digital edition released 5 September 2026 at travelbharat.org. This page is a short summary; see the full issue (PDF) via the link above."
+  },
+  {
+    "slug": "journey-of-rejesh-satiija-ani-2026",
+    "tag": "Press release",
+    "outlet": "Press release via ANI",
+    "title": "Redefining Industry and Purpose: The Journey of Rejesh Satiija",
+    "metaTitle": "Press Release: Redefining Industry and Purpose — The Journey of Rejesh Satiija",
+    "metaDescription": "Summary of the July 2026 press release on Rejesh Satiija distributed via ANI (advertorial provided by VMPL): his business journey, philanthropy, healthcare work and the statement of his Office on the Bitcoin matter.",
+    "excerpt": "A July 2026 press release distributed via ANI (advertorial provided by VMPL) covering Rejesh Satiija's business journey, philanthropy, healthcare work and the statement of his Office on the Amit Bhardwaj Bitcoin matter.",
+    "date": "18 July 2026",
+    "datePublished": "2026-07-18",
+    "listImg": "/images/home/hero-2.jpg",
+    "listAlt": "Rejesh Satiija",
+    "eyebrow": "Press release · Distributed via ANI (advertorial)",
+    "dek": "A July 2026 press release distributed via ANI (advertorial provided by VMPL) covering Rejesh Satiija's business journey, philanthropy, healthcare work and the statement of his Office on the Amit Bhardwaj Bitcoin matter.",
+    "meta": [
+      "Press release · ANI / VMPL",
+      "18 July 2026"
+    ],
+    "img": "/images/home/hero-2.jpg",
+    "imgAlt": "Rejesh Satiija",
+    "cap": null,
+    "sourceUrl": "https://www.aninews.in/news/business/redefining-industry-and-purpose-the-journey-of-rejesh-satiija20260718131835/",
+    "sourceLabel": "Read the press release on ANI",
+    "contentHtml": "<p>On 18 July 2026 a press release titled \"Redefining Industry and Purpose: The Journey of Rejesh Satiija\" was distributed via ANI and republished by a number of other news websites. It is labelled as an advertorial provided by VMPL; ANI states that it is not responsible for its content. It is promotional coverage, not independent reporting.</p>\n<h2>What the release covers</h2>\n<p>The release describes <strong>Rejesh Satiija</strong> as an engineer-turned-industrialist who moved to Dubai and then Africa in the early 1990s, began in small-scale scrap and wood trading, and built a business in manufacturing, commodities and industrial exports supplying Toyota, Honda and Rolls-Royce. It also covers his philanthropic pledge for women and children, his AI-driven healthcare initiative, and his recognition by Entrepreneur Middle East, Titans of Africa and Jewels of Punjab.</p>\n<h2>Public clarification regarding the Amit Bhardwaj Bitcoin matter</h2>\n<p>The release repeats the statement from the Office of <strong>Rejesh Satiija</strong> that he has never been involved in cryptocurrency, that his only interaction with Amit Bhardwaj was a 2016 discussion about a proposed gold-mining transaction that did not go ahead, and that he has no association with Raj Kundra. <a href=\"/updates/statement-bhardwaj-case\">Read the full public clarification</a>.</p>\n<h2>Where the release was published</h2>\n<ul>\n<li><a href=\"https://www.aninews.in/news/business/redefining-industry-and-purpose-the-journey-of-rejesh-satiija20260718131835/\" target=\"_blank\" rel=\"noopener\">ANI</a></li>\n<li><a href=\"https://www.tribuneindia.com/news/business/redefining-industry-and-purpose-the-journey-of-rejesh-satiija/\" target=\"_blank\" rel=\"noopener\">The Tribune (India)</a></li>\n<li><a href=\"https://www.worldnewsnetwork.net/news/redefining-industry-and-purpose-the-journey-of-rejesh-satiija20260718131831/\" target=\"_blank\" rel=\"noopener\">World News Network</a></li>\n<li><a href=\"https://www.indianeconomicobserver.com/news/redefining-industry-and-purpose-the-journey-of-rejesh-satiija20260718131831/\" target=\"_blank\" rel=\"noopener\">Indian Economic Observer</a></li>\n<li><a href=\"https://www.usareport.news/news/redefining-industry-and-purpose-the-journey-of-rejesh-satiija20260718131831/\" target=\"_blank\" rel=\"noopener\">USA Report</a></li>\n<li><a href=\"https://www.uaetimes.news/news/redefining-industry-and-purpose-the-journey-of-rejesh-satiija20260718131831/\" target=\"_blank\" rel=\"noopener\">UAE Times</a></li>\n<li><a href=\"https://www.europeansuntimes.com/news/redefining-industry-and-purpose-the-journey-of-rejesh-satiija20260718131831/\" target=\"_blank\" rel=\"noopener\">European Sun Times</a></li>\n<li><a href=\"https://www.middleeasttimes.news/news/redefining-industry-and-purpose-the-journey-of-rejesh-satiija20260718131831/\" target=\"_blank\" rel=\"noopener\">Middle East Times</a></li>\n<li><a href=\"https://www.englandnewsportal.com/news/redefining-industry-and-purpose-the-journey-of-rejesh-satiija20260718131831/\" target=\"_blank\" rel=\"noopener\">England News Portal</a></li>\n</ul>",
+    "tags": [
+      "Press release",
+      "ANI",
+      "2026"
+    ],
+    "sourceNote": "Source: press release distributed via ANI on 18 July 2026, labelled \"Advertorial disclaimer: The above press release has been provided by VMPL. ANI will not be responsible in any way for the content of the same.\" This page is a short summary."
+  },
+  {
     "slug": "building-businesses-transforming-lives-2026",
     "tag": "Entrepreneur",
     "title": "Rejesh Satiija: Building Businesses, Transforming Lives, Inspiring Hope",
@@ -49,6 +115,8 @@ const magazines = [
       "Entrepreneur Middle East",
       "2026"
     ],
+    "sourceUrl": "https://mena.entrepreneur.com/entrepreneurs/the-100-nris-2026-rejesh-satiija-building-wealth-with-purpose-creating-legacy-with-compassion",
+    "sourceLabel": "Read the full article on Entrepreneur Middle East",
     "sourceNote": "Source: Entrepreneur Middle East (mena.entrepreneur.com), \"The 100 NRIs 2026.\" Full article available via the link above; this page presents a short summary only, in keeping with copyright."
   },
   {
@@ -156,7 +224,7 @@ const magazines = [
     "sourceNote": "Source: Eastern Eye Asian Rich List, April 2014, p.38. Listed at #11= (Mining), valuation £670m."
   },
   {
-    "slug": "rajesh-satiija-ram-power101-2014",
+    "slug": "rejesh-satiija-ram-power101-2014",
     "tag": "GG2 Power 101",
     "title": "Rejesh Satiija — New Entry",
     "excerpt": "Ranked #27 in Mines on the 2014 GG2 Power 101 list, a newly relocated global entrepreneur with interests principally in Africa.",

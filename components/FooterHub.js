@@ -217,7 +217,34 @@ export default function FooterHub({ showContactForm = true }) {
               </span>
               Links
             </a>
-            <a href="/magazines" className="footer-link footer-link-press">
+            <a href="/profile" className="footer-link footer-link-profile">
+              <span className="footer-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75">
+                  <circle cx="12" cy="8" r="3.5" />
+                  <path d="M5 20c.8-3.6 3.6-5.5 7-5.5s6.2 1.9 7 5.5" />
+                </svg>
+              </span>
+              Profile
+            </a>
+            <a href="/updates/statement-bhardwaj-case" className="footer-link footer-link-statement">
+              <span className="footer-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75">
+                  <path d="M7 3.5h7l4 4V20.5H7z" />
+                  <path d="M14 3.5v4h4M9.5 12h6M9.5 15.5h6" />
+                </svg>
+              </span>
+              Official Statement
+            </a>
+            <a href="/legal-profile" className="footer-link footer-link-legal">
+              <span className="footer-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75">
+                  <path d="M12 4v16M7 20h10M5 7h14" />
+                  <path d="M5 7 2.5 13a2.5 2.5 0 0 0 5 0zM19 7l-2.5 6a2.5 2.5 0 0 0 5 0z" />
+                </svg>
+              </span>
+              Legal Profile
+            </a>
+            <a href="/press" className="footer-link footer-link-press">
               <span className="footer-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75">
                   <path d="M5 4.5h9.5A2.5 2.5 0 0 1 17 7v13.5H7.5A2.5 2.5 0 0 1 5 18V4.5z" />

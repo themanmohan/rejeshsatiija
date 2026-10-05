@@ -139,6 +139,17 @@ h1,h2,h3{font-family:var(--display);font-weight:500;letter-spacing:-0.01em;}
 .statement-line::before{
   content:"|";position:absolute;left:0;color:var(--bronze-dim);
 }
+.statement-section h2:first-child{margin-top:0;}
+.statement-section section{margin-bottom:8px;}
+.statement-section h3{font-family:var(--display);font-weight:500;font-size:20px;color:var(--parchment);margin:24px 0 8px;}
+.statement-section a{color:var(--bronze);}
+.statement-dates{display:flex;flex-wrap:wrap;gap:6px 24px;font-family:var(--mono);font-size:12px !important;letter-spacing:.04em;text-transform:uppercase;}
+.statement-timeline,.statement-sources{list-style:none;padding:0;margin:0 0 22px;border-top:1px solid var(--hair);max-width:70ch;}
+.statement-timeline li,.statement-sources li{padding:14px 0;border-bottom:1px solid var(--hair);}
+.statement-timeline p{margin-bottom:0;}
+.statement-when{display:block;font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--bronze);margin-bottom:4px;}
+.statement-sources a{font-size:16px;}
+.statement-source-note{display:block;margin-top:4px;font-size:13px;color:var(--parchment-dim);}
 .source-note{
   margin-top:28px;font-size:13px;color:var(--parchment-dim);
   border:1px dashed var(--hair);padding:16px 20px;font-family:var(--mono);line-height:1.7;

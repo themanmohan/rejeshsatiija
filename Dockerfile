@@ -21,7 +21,7 @@ ARG NEXT_PUBLIC_TENANT_ID
 ARG NEXT_PUBLIC_TICKET_URL
 ARG NEXT_PUBLIC_CONTACT_DEPARTMENT_BASE_URI
 
-ARG SKIP_DOCS_API=1
+ARG SKIP_DOCS_API=0
 
 ENV NEXT_PUBLIC_SITE_URL=$NEXT_PUBLIC_SITE_URL \
     NEXT_PUBLIC_CONTACT_API_URL=$NEXT_PUBLIC_CONTACT_API_URL \
@@ -35,8 +35,9 @@ ENV NEXT_PUBLIC_SITE_URL=$NEXT_PUBLIC_SITE_URL \
     NEXT_PUBLIC_CONTACT_DEPARTMENT_BASE_URI=$NEXT_PUBLIC_CONTACT_DEPARTMENT_BASE_URI \
     SKIP_DOCS_API=$SKIP_DOCS_API
 
-# SKIP_DOCS_API=1 avoids SSG hanging when Docker cannot reach the docs API.
-# Browser hooks still load CMS content at runtime. Set build-arg SKIP_DOCS_API=0 to bake CMS SEO at build.
+# Docs API is fetched at build so CMS-only articles get static pages and appear in
+# listings/sitemap (requests time out after 4s and fall back to local data).
+# Set build-arg SKIP_DOCS_API=1 only if the build machine cannot reach the API.
 RUN npm run build
 
 # ---- Stage 2: Serve the static output with nginx ----

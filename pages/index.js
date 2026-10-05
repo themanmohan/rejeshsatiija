@@ -107,12 +107,12 @@ export default function Home() {
             <div className="notice-head">
               <div className="notice-icon">i</div>
               <div>
-                <h3><strong>Rejesh Satiija</strong> has no connection to, and is not involved in, the Amit Bhardwaj Bitcoin case</h3>
+                <h3>Public Clarification Regarding the Amit Bhardwaj Bitcoin Matter</h3>
               </div>
             </div>
-            <p>In response to public interest and media queries, <strong>Rejesh Satiija</strong> confirms that he is not, and has never been, a party to, subject of, or witness in the ongoing legal proceedings concerning Mr. Amit Bhardwaj&apos;s Bitcoin case in India.</p>
-            <p>In 2016, he sold a portfolio of gold mining assets to Mr. Bhardwaj in an ordinary, fully documented commercial transaction. That agreement was mutually cancelled in 2017, with every related payment and transaction closed and settled in full at the time. No commercial relationship has existed between the two since. He further confirms that he does not know, and has never met, Mr. Raj Kundra, who has also been named in connection with related proceedings.</p>
-            <a className="notice-link" href="/updates/statement-bhardwaj-case">Read the full statement &rarr;</a>
+            <p>In its official statement, the Office of <strong>Rejesh Satiija</strong> states that Mr. Satiija has never been involved in Bitcoin or cryptocurrency, and sets out the facts of his past contact with Mr. Amit Bhardwaj and the position regarding Mr. Raj Kundra.</p>
+            <p>The full statement, a timeline based on it, and published coverage are available on the official statement page.</p>
+            <a className="notice-link" href="/updates/statement-bhardwaj-case">Read the full Public Clarification regarding the Amit Bhardwaj Bitcoin matter &rarr;</a>
           </div>
           <div className="notice-visual">
             <img src="/images/home/statement-portrait.jpg" alt="Rejesh Satiija" loading="lazy" />
@@ -161,6 +161,14 @@ export default function Home() {
             <p>The full journey from North India to a global mining empire — background, experience timeline, achievements and fields of contribution.</p>
           </div>
         </a>
+        <a className="insight-card" href="/profile">
+          <div className="ph ph-about"><img src="/images/home/gallery-portrait.jpg" alt="Profile of Rejesh Satiija" loading="lazy"/></div>
+          <div className="body">
+            <div className="tag">Profile</div>
+            <h3>Who is Rejesh Satiija?</h3>
+            <p>Background, influence, the &ldquo;Mr Lucky&rdquo; name, the Sun &amp; Sand Group business, the Bitcoin clarification and press coverage.</p>
+          </div>
+        </a>
         <a className="insight-card" href="/vision">
           <div className="ph ph-about"><img src="/images/vision/portrait-purple-vest.jpg" alt="Vision statement by Rejesh Satiija" loading="lazy"/></div>
           <div className="body">
@@ -182,7 +190,7 @@ export default function Home() {
           <div className="body">
             <div className="tag">Press</div>
             <h3>Magazines</h3>
-            <p>Full-length magazine and press features — Asian Rich List, GG2 Power 101, NRI Achievers, Titans of Africa and more.</p>
+            <p>Full-length magazine and press features — Travel Bharat (Vande Bharat Express), Asian Rich List, GG2 Power 101, NRI Achievers, Titans of Africa and more.</p>
           </div>
         </a>
         <a className="insight-card" href="/blogs">

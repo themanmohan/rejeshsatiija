@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Script from 'next/script';
 import NavHub from '../components/NavHub';
 import FooterHub from '../components/FooterHub';
@@ -32,6 +33,7 @@ export default function About() {
             <cite>&mdash; Rejesh Satiija</cite>
           </blockquote>
           <p>In more recent years, his ambitions have widened further still. Alongside his existing interests, <strong>Rejesh Satiija</strong> now leads projects across road construction and infrastructure, AI and robotics, logistics, healthcare, real estate, agriculture, mining, tourism and education &mdash; describing his mission as one to "build stronger economies, smarter infrastructure, empowered communities, and sustainable businesses that create lasting prosperity for generations to come."</p>
+          <p>For the position on public references to the Amit Bhardwaj Bitcoin matter, read the <Link href="/updates/statement-bhardwaj-case">Public Clarification Regarding the Amit Bhardwaj Bitcoin Matter</Link>.</p>
           <div className="tag-row">
             <span className="tag-pill">Leadership</span>
             <span className="tag-pill">Entrepreneurship</span>

@@ -3,11 +3,13 @@ import Script from 'next/script';
 import { useEffect } from 'react';
 import { boldNodes } from '../lib/boldNames';
 import NavHub from './NavHub';
+import RelatedLinks from './RelatedLinks';
 import SeoHead from './SeoHead';
 
 export default function PostLayout({
   pageTitle,
   pageDescription,
+  pageSchema,
   path,
   backHref,
   backLabel,
@@ -23,6 +25,8 @@ export default function PostLayout({
   sourceNote,
   sourceUrl,
   sourceLabel,
+  beforeContent = null,
+  afterContent = null,
   prevHref,
   prevLabel = 'Previous',
   nextHref,
@@ -48,6 +52,7 @@ export default function PostLayout({
         path={path}
         image={img}
         type="article"
+        schema={pageSchema}
       />
       <Script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" strategy="beforeInteractive" />
 
@@ -91,7 +96,11 @@ export default function PostLayout({
             </a>
           )}
 
+          {beforeContent}
+
           <div className="post-content" dangerouslySetInnerHTML={{ __html: contentHtml }} />
+
+          {afterContent}
 
           {tags.length > 0 && (
             <div className="tag-row">
@@ -100,6 +109,8 @@ export default function PostLayout({
           )}
 
           {sourceNote && <div className="source-note">{sourceNote}</div>}
+
+          <RelatedLinks path={path} />
         </div>
 
         <div className="wrap post-nav">
